@@ -14,8 +14,10 @@ class CvController extends Controller
 
     private function parseCvJsonFile(): array
     {
-        $cvJsonFile = Storage::disk('public')->get('resume.json');
+        if(Storage::disk('public')->exists('resume.json')){
+            return Storage::disk('public')->json('resume.json');
+        }
 
-        return json_decode($cvJsonFile, true);
+        return [];
     }
 }
