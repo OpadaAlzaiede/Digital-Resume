@@ -6,4 +6,5 @@
     <title>Digital Resume</title>
 </head>
 <body>
+    <h1>Name {{ $cvData['personal_info']['name'] }}</h1>
 </body>
