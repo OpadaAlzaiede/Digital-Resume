@@ -1,0 +1,81 @@
+{
+    "personal_info": {
+        "name": "John Doe",
+        "title": "Full Stack Developer",
+        "email": "john.doe@example.com",
+        "phone": "+1 (555) 123-4567",
+        "address": "123 Main St, Cityville, ST 12345",
+        "links": {
+            "website": "https://johndoe.dev",
+            "linkedin": "https://linkedin.com/in/johndoe",
+            "github": "https://github.com/johndoe"
+        },
+        "summary": "Passionate full-stack developer with 5+ years of experience building web applications using Laravel and Vue.js."
+    },
+    "skills": {
+        "technical": [
+            "PHP", "Laravel", "JavaScript", "Vue.js",
+            "MySQL", "Git", "Docker", "REST APIs",
+            "HTML5", "CSS3", "Tailwind CSS"
+        ],
+        "soft": [
+            "Problem Solving", "Team Leadership",
+            "Agile Development", "Project Management"
+        ]
+    },
+    "education": [
+        {
+            "institution": "State University",
+            "degree": "Bachelor of Science in Computer Science",
+            "start_date": "2014-09",
+            "end_date": "2018-06",
+            "description": "Specialized in Web Technologies. Graduated with honors."
+        },
+        {
+            "institution": "Tech Bootcamp",
+            "degree": "Full Stack Web Development Certificate",
+            "start_date": "2018-07",
+            "end_date": "2018-09",
+            "description": "Intensive 12-week coding bootcamp"
+        }
+    ],
+    "work_experience": [
+        {
+            "position": "Senior Laravel Developer",
+            "company": "Tech Solutions Inc.",
+            "start_date": "2021-03-15",
+            "end_date": null,
+            "responsibilities": [
+                "Lead development team building enterprise Laravel applications",
+                "Architected REST APIs serving 10,000+ daily requests",
+                "Mentored junior developers",
+                "Reduced server costs by 30% through query optimization"
+            ]
+        },
+        {
+            "position": "Web Developer",
+            "company": "Digital Agency LLC",
+            "start_date": "2018-10",
+            "end_date": "2021-03",
+            "responsibilities": [
+                "Developed custom CMS solutions for clients",
+                "Implemented CI/CD pipelines",
+                "Collaborated with designers on UI/UX"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "name": "English",
+            "proficiency": "Native"
+        },
+        {
+            "name": "Spanish",
+            "proficiency": "Professional Working"
+        },
+        {
+            "name": "French",
+            "proficiency": "Elementary"
+        }
+    ]
+}
