@@ -62,6 +62,17 @@
                 "Implemented CI/CD pipelines",
                 "Collaborated with designers on UI/UX"
             ]
+        },
+        {
+            "position": "Web Developer",
+            "company": "Nestech",
+            "start_date": "2017-10",
+            "end_date": "2018-08",
+            "responsibilities": [
+                "Developed custom CMS solutions for clients",
+                "Implemented CI/CD pipelines",
+                "Collaborated with designers on UI/UX"
+            ]
         }
     ],
     "languages": [
