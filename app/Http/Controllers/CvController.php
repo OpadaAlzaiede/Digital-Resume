@@ -26,7 +26,7 @@ class CvController extends Controller
         });
 
         $pdf = Pdf::loadView('cv', ['cvData' => $cvData]);
-        Storage::disk('public')->put('resume.pdf', $pdf->output());
+
         return $pdf->download($cvData['personal_info']['name'] . '_CV.pdf');
     }
 
