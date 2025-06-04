@@ -17,6 +17,10 @@
     </style>
 </head>
 <body class="bg-gray-100">
+    <a href="{{ route('cv.download') }}" class="fixed bottom-8 right-8 bg-blue-600 text-white rounded-full p-4 shadow-lg hover:bg-blue-700 transition-colors duration-200 flex items-center gap-2 z-50">
+        <i class="fas fa-file-pdf text-xl"></i>
+            <span>Download PDF</span>
+    </a>
     <div class="container mx-auto px-4 py-8 max-w-4xl">
         <details class="mb-6" open>
             <summary class="bg-white rounded-t-lg shadow-md p-6 hover:bg-gray-50">
