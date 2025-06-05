@@ -14,8 +14,8 @@ This document provides step-by-step instructions for deploying the Single Page D
 
 1. **Clone the Repository**
    ```bash
-   git clone <repository-url>
-   cd single_paged_digital_resume
+   git clone https://github.com/OpadaAlzaiede/Digital-Resume.git
+   cd Digital-Resume
 
 2. **Install PHP Dependencies
     ```bash
