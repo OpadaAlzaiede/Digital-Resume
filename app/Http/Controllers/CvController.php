@@ -10,26 +10,34 @@ use Illuminate\Support\Facades\Storage;
 
 class CvController extends Controller
 {
+    /**
+     * GET CV Data
+     *
+     * @return View
+     */
     public function index(): View
     {
-        $cvData = Cache::remember('cvData', now()->addDay(), function () {
-            return $this->parseCvJsonFile();
-        });
-
-        return view('cv', ['cvData' => $cvData]);
+        return view('cv', ['cvData' => $this->getCvData()]);
     }
 
+    /**
+     * Download CV as PDF
+     *
+     * @return Response
+     */
     public function download(): Response
     {
-        $cvData = Cache::remember('cvData', now()->addDay(), function () {
-            return $this->parseCvJsonFile();
-        });
-
+        $cvData = $this->getCvData();
         $pdf = Pdf::loadView('cv', ['cvData' => $cvData]);
 
-        return $pdf->download($cvData['personal_info']['name'] . '_CV.pdf');
+        return $pdf->download(str_replace(' ', '_', $cvData['personal_info']['name']). '_CV.pdf');
     }
 
+    /**
+     * Parse CV JSON file
+     *
+     * @return array
+     */
     private function parseCvJsonFile(): array
     {
         if (Storage::disk('public')->exists('resume.json')) {
@@ -37,5 +45,17 @@ class CvController extends Controller
         }
 
         return [];
+    }
+
+    /**
+     * Get CV Data
+     *
+     * @return array
+     */
+    private function getCvData(): array
+    {
+        return Cache::remember('cvData', now()->addDay(), function () {
+            return $this->parseCvJsonFile();
+        });
     }
 }
